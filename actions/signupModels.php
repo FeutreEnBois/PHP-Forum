@@ -18,6 +18,19 @@ if(isset($_POST['validate'])){
             $insertUserOnWebsite = $bdd->prepare('INSERT INTO users(pseudo, lastname, firstname, pwd)VALUES(?, ?, ?, ?)');
             $insertUserOnWebsite->execute(array($user_pseudo, $user_lastname, $user_firstname, $user_password));
 
+            $getInfoOfThisUser = $bdd->prepare('SELECT id, pseudo, firstname, lastname FROM users WHERE lastname = ? AND firstname = ? AND pseudo = ?');
+            $getInfoOfThisUser->execute(array($user_lastname, $user_firstname, $user_pseudo));
+
+            $userInfos = $getInfoOfThisUser->fetch();
+
+            $_SESSION['auth'] = true;
+            $_SESSION['id'] = $userInfos['id'];
+            $_SESSION['lastname'] = $userInfos['lastname'];
+            $_SESSION['firstname'] = $userInfos['firstname'];
+            $_SESSION['pseudo'] = $userInfos['pseudo'];
+
+            header('Location: index.php');
+
         }else{
             $errorMsg = "L'utilisateur existe déjà !";
         }
