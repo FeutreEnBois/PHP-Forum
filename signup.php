@@ -12,16 +12,16 @@
 
 
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Pseudo</label>
-            <input type="text" class="form-control" name="pseudo">
+            <label for="exampleInputEmail1" class="form-label">Username</label>
+            <input type="text" class="form-control" name="pseudo" placeholder="Enter here your username">
         </div>
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Nom</label>
-            <input type="text" class="form-control" name="lastname">
+            <label for="exampleInputPassword1" class="form-label">Name</label>
+            <input type="text" class="form-control" name="lastname" placeholder="Enter here your lastname">
         </div>
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Prenom</label>
-            <input type="text" class="form-control" name="firstname">
+            <label for="exampleInputPassword1" class="form-label">Firstname</label>
+            <input type="text" class="form-control" name="firstname" placeholder="Enter here your firstname">
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Password</label>
