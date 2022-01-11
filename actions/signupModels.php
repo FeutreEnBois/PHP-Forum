@@ -3,12 +3,12 @@
 require('actions/database.php');
 
 if(isset($_POST['validate'])){
-    if(!empty($_POST['pseudo']) AND !empty($_POST['lastname']) AND !empty($_POST['firstname']) AND !empty($_POST['password'])){
+    if(!empty($_POST['pseudo']) AND !empty($_POST['lastname']) AND !empty($_POST['firstname']) AND !empty($_POST['pwd'])){
 
         $user_pseudo = htmlspecialchars(($_POST['pseudo']));
         $user_lastname = htmlspecialchars($_POST['lastname']);
         $user_firstname = htmlspecialchars($_POST['firstname']);
-        $user_password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+        $user_password = password_hash($_POST['pwd'], PASSWORD_DEFAULT);
 
         $checkIfUserAlreadyExists = $bdd->prepare('SELECT pseudo FROM users WHERE pseudo = ?');
         $checkIfUserAlreadyExists->execute(array($user_pseudo));
@@ -28,7 +28,7 @@ if(isset($_POST['validate'])){
             $_SESSION['lastname'] = $userInfos['lastname'];
             $_SESSION['firstname'] = $userInfos['firstname'];
             $_SESSION['pseudo'] = $userInfos['pseudo'];
-
+            
             header('Location: index.php');
 
         }else{

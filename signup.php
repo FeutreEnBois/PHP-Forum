@@ -25,11 +25,11 @@
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" name="password">
+            <input type="password" class="form-control" name="pwd">
         </div>
         <button type="submit" class="btn btn-primary" name="validate">S'incrire</button>
         <br><br>
-        <a href="login.php"><p>J'ai déjà un compte, je me connecte</p></a>
+        <a href="index.php"><p>J'ai déjà un compte, je me connecte</p></a>
     </form>
 
 </body>
