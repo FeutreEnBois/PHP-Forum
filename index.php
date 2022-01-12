@@ -1,4 +1,6 @@
-<?php require('actions/users/securityModels.php');?>
+<?php 
+session_start();
+require('actions/users/securityModels.php');?>
 
 <!DOCTYPE html>
 <html lang="en">
