@@ -1,6 +1,7 @@
 <?php 
 session_start();
-require('actions/users/securityModels.php');?>
+//require('actions/questions/showAllQuestionsAction.php');
+?>
 
 <!DOCTYPE html>
 <html lang="en">
