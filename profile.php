@@ -29,7 +29,7 @@
                     ?>
                     <div class="card">
                         <div class="card-header">
-                            <?= $question['titre']; ?>
+                            <?= $question['title']; ?>
                         </div>
                         <div class="card-body">
                             <?= $question['description']; ?>
