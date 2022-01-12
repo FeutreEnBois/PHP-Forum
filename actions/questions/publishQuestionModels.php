@@ -12,11 +12,12 @@ if(isset($_POST['validate'])){
         $question_id_author = $_SESSION['id'];
         $question_pseudo_author = $_SESSION['pseudo'];
 
-        $insertQuestionOnWebsite = $bdd->prepare('INSERT INTO questions(title, description, content, id_autheur, pseudo_auteur, date_publication)VALUES(?,?,?,?,?,?)');
+        $insertQuestionOnWebsite = $bdd->prepare('INSERT INTO questions(title, description, content, id_auteur, pseudo_auteur, date_publication)VALUES(?,?,?,?,?,?)');
         $insertQuestionOnWebsite->execute(
             array(
                 $question_title,
                 $question_description,
+                $question_content,
                 $question_id_author,
                 $question_pseudo_author,
                 $question_date)

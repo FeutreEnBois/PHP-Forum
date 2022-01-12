@@ -1,6 +1,6 @@
 <?php
 require('actions/questions/publishQuestionModels.php');
-require('actions/users/securityModels.php');
+
 ?>
 
 <!DOCTYPE html>
