@@ -1,4 +1,7 @@
-<?php require('actions/securityModels.php'); ?>
+<?php
+require('actions/questions/publishQuestionModels.php');
+require('actions/users/securityModels.php');
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +15,10 @@
     
     <form class="container" method="POST">
 
-        <?php if(isset($errorMsg)){ echo '<p>'.$errorMsg.'</p>'; } ?>
+        <?php 
+        if(isset($errorMsg)){ echo '<p>'.$errorMsg.'</p>'; }
+        if(isset($successMsg)){ echo '<p>'.$successMsg.'</p>'; }
+        ?>
 
 
         <div class="mb-3">

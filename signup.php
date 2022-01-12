@@ -1,4 +1,4 @@
-<?php require('actions/signupModels.php') ?>
+<?php require('actions/users/signupModels.php') ?>
 
 <!DOCTYPE html>
 <html lang="en">

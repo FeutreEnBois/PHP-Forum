@@ -1,4 +1,4 @@
-<?php require('actions/securityModels.php'); ?>
+<?php require('actions/users/securityModels.php');?>
 
 <!DOCTYPE html>
 <html lang="en">
