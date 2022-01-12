@@ -1,7 +1,7 @@
 <?php
 require('actions/users/securityModels.php');
-require('actions/questions/getInfosOfEditedQuestionModels.php')
-//require('actions/questions/editQuestionModels.php');
+require('actions/questions/getInfosOfEditedQuestionModels.php');
+require('actions/questions/editQuestionModels.php');
 
 ?>
 
@@ -29,15 +29,15 @@ require('actions/questions/getInfosOfEditedQuestionModels.php')
 
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Post Title</label>
-                    <input type="text" class="form-control" name="title" placeholder="Enter here your username">
+                    <input type="text" class="form-control" name="title" placeholder="Enter here your username" value="<?= $question_title ?>">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Post Description</label>
-                    <textarea class="form-control" name="description" placeholder="Enter here your lastname"></textarea>
+                    <textarea class="form-control" name="description" placeholder="Enter here your lastname"><?= $question_description ?></textarea>
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Post Content</label>
-                    <textarea class="form-control" name="content" placeholder="Enter here your firstname"></textarea>
+                    <textarea class="form-control" name="content" placeholder="Enter here your firstname"><?= $question_content ?></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary" name="validate">Modify Post</button>
             </form>
