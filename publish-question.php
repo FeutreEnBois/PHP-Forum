@@ -1,4 +1,5 @@
 <?php
+require('actions/users/securityModels.php');
 require('actions/questions/publishQuestionModels.php');
 ?>
 
