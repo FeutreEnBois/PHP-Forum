@@ -7,9 +7,6 @@
 <?php include 'includes/head.php'; ?>
 <body>
     <?php include 'includes/navbar.php'; ?>
-    <a href="publish-question.php">
-        Mon enorme cul
-</a>
     <br><br>
 
     <div class="container">
@@ -28,6 +25,28 @@
             </div>
         </form>
 
+        <br>
+
+        <?php 
+            while($question = $getAllQuestions->fetch()){
+                ?>
+                <div class="card">
+                    <div class="card-header">
+                        <a href="article.php?id=<?= $question['id']; ?>">
+                            <?= $question['title']; ?>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <?= $question['description']; ?>
+                    </div>
+                    <div class="card-footer">
+                        Publié par <a href="profile.php?id=<?= $question['id_auteur']; ?>"><?= $question['pseudo_auteur']; ?></a> le <?= $question['date_publication']; ?>
+                    </div>
+                </div>
+                <br>
+                <?php
+            }
+        ?>
 
     </div>
 
