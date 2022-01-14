@@ -10,17 +10,35 @@
         <?php if(isset($errorMsg)){ echo '<p>'.$errorMsg.'</p>'; } ?>
 
 
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Pseudo</label>
-            <input type="text" class="form-control" name="pseudo">
+        <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">Log in</h2>
+                    <form method="POST">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Username :</label>
+                                    <input class="input--style-4" type="text" name="pseudo">
+                                </div>
+                            </div>                      
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Password :</label>
+                                    <input class="input--style-4" type="email" name="pwd">
+                                </div>
+                            </div>
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--blue" type="submit" name="validate">Connect</button>
+                        </div>
+                        <div class="p-t-30">
+                            <a href="signup.php"> <p> I don't have an account </p> </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" name="pwd">
-        </div>
-        <button type="submit" class="btn btn-primary" name="validate">Se connecter</button>
-        <br><br>
-        <a href="signup.php"><p>Je n'ai pas de compte je m'inscris</p></a>
+    </div>
     </form>
 
 </body>
