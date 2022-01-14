@@ -1,7 +1,9 @@
 <?php 
     session_start();
     require('actions/questions/showArticleContentAction.php'); 
-    ?>
+    require('actions/questions/postAnswerAction.php');
+    require('actions/questions/showAllAnswersOfQuestionAction.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <?php include 'includes/head.php'; ?>
