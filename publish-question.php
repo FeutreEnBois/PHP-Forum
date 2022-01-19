@@ -42,7 +42,7 @@ require('actions/questions/publishQuestionModels.php');
                             <textarea type="text" class="txtareas" name="content"></textarea>
                         </div>
                         <div class="p-t-20">
-                        <button type="submit" class="btn btn--radius-2 btn--blue" name="validate">Publier la question</button>
+                        <button type="submit" class="btn btn--radius-2 btn--blue" name="validate">Publish question</button>
                     </div>
                 </div>
             </div>
