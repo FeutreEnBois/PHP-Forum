@@ -11,36 +11,42 @@ require('actions/questions/publishQuestionModels.php');
 </head>
 
 <body>
-    <br><br>
+    
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
 
     <?php include 'includes/navbar.php'; ?>
 
-    <form class="container" method="POST">
+    <form method="POST">
 
-        <?php
-        if (isset($errorMsg)) {
-            echo '<p>' . $errorMsg . '</p>';
-        }
-        if (isset($successMsg)) {
-            echo '<p>' . $successMsg . '</p>';
-        }
-        ?>
-
-
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Titre de la question</label>
-            <input type="text" class="form-control" name="title">
+        <div class="wrapper wrapper--75p p-t-20">
+            <div class="card card-4">
+                <div class="card-body">
+                    <?php
+                    if (isset($errorMsg)) {
+                        echo '<p>' . $errorMsg . '</p>';
+                    }
+                    if (isset($successMsg)) {
+                        echo '<p>' . $successMsg . '</p>';
+                    }
+                    ?>
+                    <div>
+                        <label for="exampleInputEmail1">Question Title :</label>
+                        <input type="text" class="input--style-4" name="title" placeholder="Enter your question">
+                        </div>
+                        <div class="p-t-20">
+                            <label for="exampleInputEmail1" class="form-label">Describe your problem :</label> <br>
+                            <textarea class="txtareas" name="description"></textarea>
+                        </div>
+                        <div class="p-t-20">
+                            <label for="exampleInputEmail1" class="form-label">Add content :</label> <br>
+                            <textarea type="text" class="txtareas" name="content"></textarea>
+                        </div>
+                        <div class="p-t-20">
+                        <button type="submit" class="btn btn--radius-2 btn--blue" name="validate">Publier la question</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Description de la question</label>
-            <textarea class="form-control" name="description"></textarea>
-        </div>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Contenu de la question</label>
-            <textarea type="text" class="form-control" name="content"></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary" name="validate">Publier la question</button>
     </form>
 </body>
 
