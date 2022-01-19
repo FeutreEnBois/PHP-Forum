@@ -8,34 +8,35 @@
 <body>
     <?php include 'includes/navbar.php'; ?>
 
-    <br><br>
-    <div class="container">
-
-        <?php 
-
-            while($question = $getAllMyQuestions->fetch()){
-                ?>
-                <div class="card">
-                    <h5 class="card-header">
-                        <a href="article.php?id=<?= $question['id']; ?>">
-                            <?= $question['title']; ?>
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--75p p-t-20">
+            <?php 
+                while($question = $getAllMyQuestions->fetch()){
+            ?>
+            <div class="card card-4">
+                <div class="card-body">
+                    <form method="POST">
+                        <a href="article.php?id=<?= $question['id']; ?>" class="title">
+                            <?= $question['title']; ?> Question title
                         </a>
-                    </h5>
-                    <div class="card-body">
-                        <p class="card-text">
-                            <?= $question['description']; ?>
-                        </p>
-                        <a href="article.php?id=<?= $question['id']; ?>" class="btn btn-primary">Accéder à la question</a>
-                        <a href="edit-question.php?id=<?= $question['id']; ?>" class="btn btn-warning">Modifier la question</a>
-                        <a href="actions/questions/deleteQuestionModels.php?id=<?= $question['id']; ?>" class="btn btn-danger">Supprimer la question</a>
-                    </div>
+                        <div class="p-t-20">
+                            <p>
+                                <?= $question['description']; ?>
+                                description
+                            </p>
+                        </div>
+                        <div class="p-t-20">
+                            <a href="article.php?id=<?= $question['id']; ?>" class="btn btn--radius-2 btn--green">Accéder à la question</a>
+                            <a href="edit-question.php?id=<?= $question['id']; ?>" class="btn btn--radius-2 btn--blue">Modifier la question</a>
+                            <a href="actions/questions/deleteQuestionModels.php?id=<?= $question['id']; ?>" class="btn btn--radius-2 btn--red">Supprimer la question</a>
+                        </div>
+                    </form>
                 </div>
-                <br>
-                <?php
-            }
-
-        ?>
-
+            </div>
+            <?php
+                }
+            ?>
+        </div>
     </div>
 
 </body>
