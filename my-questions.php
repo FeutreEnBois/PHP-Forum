@@ -17,18 +17,17 @@
                 <div class="card-body">
                     <form method="POST">
                         <a href="article.php?id=<?= $question['id']; ?>" class="title">
-                            <?= $question['title']; ?> Question title
+                            <?= $question['title']; ?>
                         </a>
                         <div class="p-t-20">
                             <p>
                                 <?= $question['description']; ?>
-                                description
                             </p>
                         </div>
                         <div class="p-t-20">
-                            <a href="article.php?id=<?= $question['id']; ?>" class="btn btn--radius-2 btn--green">Accéder à la question</a>
-                            <a href="edit-question.php?id=<?= $question['id']; ?>" class="btn btn--radius-2 btn--blue">Modifier la question</a>
-                            <a href="actions/questions/deleteQuestionModels.php?id=<?= $question['id']; ?>" class="btn btn--radius-2 btn--red">Supprimer la question</a>
+                            <a href="article.php?id=<?= $question['id']; ?>" class="btn btn--radius-2 btn--green">Go to the question</a>
+                            <a href="edit-question.php?id=<?= $question['id']; ?>" class="btn btn--radius-2 btn--blue">Edit question</a>
+                            <a href="actions/questions/deleteQuestionModels.php?id=<?= $question['id']; ?>" class="btn btn--radius-2 btn--red">Delete question</a>
                         </div>
                     </form>
                 </div>
