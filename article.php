@@ -40,13 +40,13 @@
                     <div class="wrapper wrapper--w780 p-t-30 height-wrap">
                         <div class="card card-4 bg-blue">
                             <div class="card-body-TB p-t-15">
-                            <label for="exampleInputEmail1" class="nav-title-b m-l-45">Réponse :</label> <br>
+                            <label for="exampleInputEmail1" class="nav-title-b m-l-45">Answers :</label> <br>
                             <div class="p-t-20">
                             <textarea name="answer" class="txtareas m-l-45"></textarea>
                             </div>
                             <br>
                             <div class="p-b-30">
-                            <button class="btn btn--blue m-l-45" type="submit" name="validate">Répondre</button>
+                            <button class="btn btn--blue m-l-45" type="submit" name="validate">Answer</button>
                             </div>
                             </div>
                         </div>    
