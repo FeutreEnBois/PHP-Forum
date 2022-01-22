@@ -1,3 +1,26 @@
+<header class="site-navbar site-navbar-target" role="banner">
+
+        <div class="container">
+          <div class="row align-items-center position-relative">              
+              
+              <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav ml-auto ">
+                  <li><a href="signup.php" class="nav-link">Home</a></li>
+                  <li><a href="signup.php" class="nav-link">Signup</a></li>
+                  <li><a href="login.php" class="nav-link">Login</a></li>
+                  <li><a href="article.php" class="nav-link">Articles</a></li>
+                  <li><a href="profil.php" class="nav-link">My profile</a></li>
+                </ul>
+              </nav>
+
+            
+          </div>
+        </div>
+
+</header>
+
+
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Forum</a>
