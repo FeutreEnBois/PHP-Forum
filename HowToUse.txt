@@ -1,0 +1,7 @@
+La base de donée doit s'appeller "forum" attention, l'orthographe est important !
+
+Importer les bases de donnée présente dans le dossier SQL.
+Il y en a normalement 3 :
+    - answers
+    - questions
+    - users
