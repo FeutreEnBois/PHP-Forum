@@ -24,7 +24,7 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Password :</label>
-                                    <input class="input--style-4" type="email" name="pwd">
+                                    <input class="input--style-4" type="password" name="pwd">
                                 </div>
                             </div>
                         <div class="p-t-15">
