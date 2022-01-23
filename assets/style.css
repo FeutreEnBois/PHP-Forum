@@ -388,6 +388,14 @@
   .btn--blue:hover {
     background: #3868cd;
   }
+
+  .btn--red {
+    background: #d32c2c;
+  }
+  
+  .btn--red:hover {
+    background: #d32c2c;
+  }
   
   
   /* ==========================================================================

@@ -30,11 +30,9 @@
                 <div class="card-body">
                     <a href="article.php?id=<?= $question['id']; ?>" class="title">
                         <?= $question['title']; ?>
-                        question titre
                     </a>
                     <div class="p-t-30">
                         <?= $question['description']; ?>
-                        description
                     </div>
                         <div class="p-t-20">
                             Publish by <a href="profile.php?id=<?= $question['id_auteur']; ?>"><?= $question['pseudo_auteur']; ?></a> le <?= $question['date_publication']; ?>
