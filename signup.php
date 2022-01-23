@@ -56,7 +56,7 @@
                                 <button class="btn btn--radius-2 btn--blue" type="submit" name="validate">Submit</button>
                             </div>
                             <div class="p-t-30">
-                                <a href="index.php">
+                                <a href="login.php">
                                     <p> I already have an account </p>
                                 </a>
                             </div>
